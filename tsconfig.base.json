@@ -13,8 +13,13 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@atomus/api-interface": ["libs/api-interface/src/index.ts"],
+      "@atomus/ui": ["libs/ui/src/index.ts"],
+      "@atomus/ui-shared": ["libs/ui-shared/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,47 @@
+form {
+    background-color: #eee;
+    padding: 0 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        label {
+            width: 200px;
+            font-size: small;
+            font-weight: bold;
+        }
+
+        input {
+            width: 300px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+        textarea {
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+        button {
+            cursor: pointer;
+            width: 100px;
+            padding: 6px;
+            background-color: #007bff;
+            color: #fff;
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:disabled {
+                cursor:default;
+                background-color: #ccc;
+            }
+        }
+    }
+}

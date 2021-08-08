@@ -27,12 +27,24 @@
     ]
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
+    "api-interface": {
+      "tags": []
+    },
     "meeting-management": {
       "tags": []
     },
     "meeting-management-e2e": {
       "tags": [],
       "implicitDependencies": ["meeting-management"]
+    },
+    "ui": {
+      "tags": []
+    },
+    "ui-shared": {
+      "tags": []
     }
   }
 }

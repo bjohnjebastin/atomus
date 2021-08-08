@@ -1,0 +1,24 @@
+<div class="container py-5">
+    <h2>Meeting booking form</h2>
+    <form id="meetingForm" [formGroup]="meetingForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="personName">Name</label>
+            <input type="text" id="personName" name="personName" formControlName="personName">
+        </div>
+        <div>
+            <label for="bookingDate">Booking date</label>
+            <input type="date" id="bookingDate" name="bookingDate" formControlName="bookingDate">
+        </div>
+        <div>
+            <label for="meetingReason">Reason for the meeting</label>
+            <textarea id="meetingReason" name="meetingReason" rows="6" formControlName="meetingReason"></textarea>
+        </div>
+        <div>
+            <button type="submit" [disabled]="!meetingForm.valid">Submit</button>
+        </div>
+    </form>
+    <h3>Booked meeting information</h3>
+    <div id="bookedMeetingInfoContainer">
+        {{bookedMeetingInfo}}
+    </div>
+</div>
