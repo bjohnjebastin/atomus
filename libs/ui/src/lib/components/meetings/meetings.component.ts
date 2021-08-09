@@ -15,6 +15,12 @@ export class MeetingsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+  /**
+   * Navigate to create meeting page
+   *
+   * @memberof MeetingsComponent
+   */
   createMeeting(): void {
     this.router.navigate(['/meetings/create']);
   }

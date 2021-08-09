@@ -17,8 +17,8 @@
             <button type="submit" [disabled]="!meetingForm.valid">Submit</button>
         </div>
     </form>
-    <h3>Booked meeting information</h3>
-    <div id="bookedMeetingInfoContainer">
-        {{bookedMeetingInfo}}
+    <div id="bookedMeetingInfoContainer" *ngIf="bookedMeetingInfo">
+        <h3>Booked meeting information</h3>
+        <p>{{bookedMeetingInfo}}</p>
     </div>
 </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Meeting } from '@atomus/api-interface';
 import { MeetingService } from '../../../service/meeting.service';
 
@@ -28,6 +28,11 @@ export class CreateMeetingComponent implements OnInit {
     });
   }
 
+  /**
+   * Form submit method to create meeting
+   * 
+   * @memberof CreateMeetingComponent
+   */
   onSubmit(): void {
     if (this.meetingForm.valid) {
       const meeting: Meeting = {
