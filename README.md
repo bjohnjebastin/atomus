@@ -15,8 +15,8 @@
   - Open a new command prompt instance and navigate to the folder "atomus"
   - Run the command "nx run meeting-management:serve"
 
-- Unit testing command: ""
-- End-to-End Testing command "nx e2e meeting-management-e2e"
+- Unit testing command: "npm run test"
+- End-to-End Testing command: "nx e2e meeting-management-e2e"
 
 # Atomus
 
