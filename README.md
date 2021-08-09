@@ -1,6 +1,12 @@
 
 # Quick Start and Demo Instructions
 
+## Installation
+- Make sure latest nodejs version is installed
+- After downloading the project, open command prompt in administrator mode and navigate to the project location
+- Run the command "npm install" to install the necessary libraries and setup the project
+
+## Execution
 - Run the back-end API
   - Open a command prompt and navigate to the folder "atomus"
   - Run the command "nx serve api"
